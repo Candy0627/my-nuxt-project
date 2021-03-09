@@ -1,0 +1,619 @@
+.banner a {
+    display: block;
+    height: 200px;
+}
+
+.banner a img {
+    height: 200px;
+    width: 100%;
+}
+
+.game_center_m {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.game_center_m .title {
+    padding: 32px 0;
+}
+
+.game_center_m .ch-title {
+    position: relative;
+    font-size: 36px;
+    color: #000;
+    font-weight: normal;
+}
+
+.game_center_m .ch-title:after {
+    content: '/';
+    position: absolute;
+    right: -24px;
+    top: -16px;
+    font-size: 53px;
+    font-weight: 100;
+    color: #000;
+}
+
+.game_center_m .en-title {
+    margin-left: 20px;
+    font-size: 22px;
+    font-weight: normal;
+    color: #fe2323;
+}
+
+.game_center_m .warpper {
+    position: relative;
+    width: 1200px;
+    margin: 50px auto 0 auto;
+    border-bottom: 1px solid #b3b3b3;
+}
+
+.game_center_m .nav-warpper .nav a{
+    display: inline;
+}
+.game_center_m .nav-warpper {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.game_center_m .nav-warpper ul.nav {
+    border: 1px solid #b3b3b3;
+    border-bottom: none;
+}
+
+.game_center_m .nav-warpper .nav {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    z-index: 1;
+    background: #f6f7fb;
+}
+
+.game_center_m .nav-warpper .nav li {
+    position: relative;
+    float: left;
+    height: 52px;
+    line-height: 52px;
+    padding:0 10px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.game_center_m .nav-warpper .nav li.active {
+    background: #fff;
+}
+
+.game_center_m .nav-warpper .nav li.active:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #fe2323;
+}
+
+.game_center_m .box {
+    position: relative;
+    /*top:10px;*/
+    border: 1px solid #b3b3b3;
+    float: left;
+    width: 1200px;
+    background: #fff;
+}
+
+.game_center_m .box .list-info {
+    display: none;
+    overflow: hidden;
+    padding: 0 0 50px 0;
+    font-size: 14px;
+    background: #fff;
+}
+
+.game_center_m .box .list-info.block {
+    display: block;
+}
+
+.game_center_m .page {
+    width: 600px;
+    margin: 32px auto 0 auto;
+}
+
+.game_center_m .recharge-account .account-number{
+    margin-bottom: 14px;
+}
+
+.game_center_m .recharge-account .account-number .number {
+    margin-right: 20px;
+}
+
+.game_center_m .recharge-account .account-number .money {
+    color: #fcc814;
+}
+
+.game_center_m .recharge-account .recharge-game{
+    margin-top: 0.42rem;
+}
+
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled{
+    opacity: 1;
+    cursor: auto;
+    pointer-events: inherit;
+}
+
+.game_center_m .recharge-account .recharge-game .label {
+    float: left;
+}
+
+.game_center_m .recharge-account .recharge-game .game-content {
+
+}
+.game_center_m .recharge-account .recharge-game .swiper-slide {
+    position: relative;
+    width: 94px !important;
+    height: 102px;
+    border: 1px solid #b3b3b3;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+}
+
+.game_center_m .recharge-account .recharge-game a{
+    display: block;
+}
+
+.game_center_m .recharge-account .recharge-game img{
+    width: 64px;
+    height: 59px;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.game_center_m .recharge-account .recharge-game p{
+    overflow: hidden;
+    width: 700px;
+    height: 28px;
+    margin:0 9px;
+    padding-top: 7px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 14px;
+    border-top:1px dashed #999;
+}
+
+.game_center_m .recharge-account .recharge-game .active{
+    border:1px solid #fcc814;
+}
+
+/* .game_center_m .recharge-account .recharge-game .active:after{
+    content:'';
+    position: absolute;
+    right: 0;
+    bottom:0;
+    width: 26px;
+    height: 26px;
+    background: url(/fronted/imgs/selected.png) no-repeat;
+} */
+
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after{
+    content: '';
+}
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after{
+    content: '';
+}
+.game_center_m .recharge-account .game-area .character,
+.game_center_m .recharge-account .game-area .area{
+    position: relative;
+    margin-right: .2rem;
+}
+
+.game_center_m .recharge-account .game-area .character input,
+.game_center_m .recharge-account .game-area .area input{
+    width: 1.8rem;
+    height: .32rem;
+    text-indent: 10px;
+    /* background: url(/fronted/imgs/select-bg.png) no-repeat; */
+    background-size: 1.6rem .27rem;
+    /* border: none; */
+    border-radius: .04rem;
+    border: 1px solid #b3b3b3;
+    margin-left: .05rem;
+}
+
+.game_center_m .recharge-account .game-area .character select,
+.game_center_m .recharge-account .game-area .area select{
+    position: absolute;
+    top:.06rem;
+    left:.1rem;
+    width: 93%;
+    height: .28rem;
+    outline: none;
+
+}
+
+.game_center_m .recharge-account .game-area {
+    margin-top: .46rem;
+}
+
+.game_center_m .recharge-account .recharge-money{
+    padding: 22px 0 0 0;
+    padding-bottom: 20px;
+}
+.czmoney{
+    margin:20px auto -5px
+}
+.total-product{
+    margin-top: 17px;margin-bottom: 20px;
+}
+
+.game_center_m .recharge-account .recharge-money .label {
+    text-align: left;
+}
+
+.game_center_m .recharge-account .recharge-money .game-content {
+    position: relative;
+    width: 635px;
+    left: -24px;
+    float: left;
+    /*height: 82px;*/
+}
+
+.game_center_m .recharge-account .recharge-money li{
+    position: relative;
+    float: left;
+    width: 94px;
+    height: 99px;
+    margin-right: 20px;
+    border: 1px solid #b3b3b3;
+    cursor: pointer;
+    margin:10px;
+    text-align: center;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.game_center_m .recharge-account .recharge-money img{
+    width: 94px;
+    height: 65px;
+}
+
+.game_center_m .recharge-account .recharge-money p{
+    overflow: hidden;
+    width: 70px;
+    height: 28px;
+    margin: 0 auto;
+    padding-top:4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 14px;
+    border-top:1px dashed #999;
+}
+
+.game_center_m .recharge-account .recharge-money .other-money{
+    color: #b3b3b3;
+}
+
+.game_center_m .recharge-account .recharge-money .active{
+    border:1px solid #fcc814;
+}
+
+.game_center_m .recharge-account .method-money li{
+    width: 327px !important;
+    float: left;
+    padding: 0 !important;
+    margin-bottom: 20px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.game_center_m .recharge-account .method-money li:nth-child(2n){
+    margin-left: 11px
+}
+
+/* .game_center_m .recharge-account .recharge-money .active:after{
+    content:'';
+    position: absolute;
+    right: 0;
+    bottom:0;
+    width: 26px;
+    height: 26px;
+    background: url(/assets/imgs/selected.png) no-repeat;
+    background-size: 100% 100%
+} */
+
+.game_center_m .recharge-account .tips{
+    position: relative;
+    padding-bottom:20px;
+    border-bottom: 1px solid #b3b3b3;
+    color: #999;
+    font-size: 14px;
+}
+
+.game_center_m .recharge-account .tips:before{
+    content:'';
+    position: relative;
+    top:5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(/fronted/imgs/i.png) no-repeat;
+}
+
+.game_center_m .recharge-account .method-money{
+    padding: 22px 0 0 0;
+    text-align: left;
+}
+
+.game_center_m .recharge-account .method-money .label {
+    float: left;
+    width: 130px;
+    margin-right: 10px;
+}
+
+.game_center_m .recharge-account .method-money .img {
+    display: inline-block;
+    width: 105px;
+    height: 42px;
+    padding: 6px 0 0 0;
+    border: 1px solid #b3b3b3;
+    text-align: center;
+    background: #fff;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.game_center_m .recharge-account .method-money .img img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.game_center_m .recharge-account .method-money .name{
+    font-size: 16px;
+    color:#5d5d5d
+}
+
+.game_center_m .recharge-account .method-money input{
+    position: relative;
+    width: 22px;
+    height: 22px;
+    top:-7px;
+    left: 0;
+}
+
+.game_center_m .recharge-account .method-money input:before{
+    content:'';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    background: url(/fronted/imgs/sex-radio.png) no-repeat 0 100%;
+}
+
+.game_center_m .recharge-account .method-money input:checked:before{
+    background: url(/fronted/imgs/sex-radio.png) no-repeat 0 0;
+}
+
+.game_center_m .recharge-account .method-money .name{
+    position: relative;
+    top:-5px;
+}
+
+.game_center_m .recharge-account .method-money  li{
+    float: left;
+    width: 300px;
+    padding:0 0 0 18px;
+    margin-bottom: 20px ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.game_center_m .recharge-account .method-content {
+    float: left;
+    width: 665px;
+}
+
+.game_center_m .recharge-account .pay a{
+    display: block;
+    width: 110px;
+    height: 36px;
+    margin: 20px 0;
+    text-align: center;
+    line-height: 36px;
+    color:#fff;
+    background: #fe2323;
+}
+.pay1{
+    cursor: pointer;
+    /* background: #ff4e43; */
+    width: 204px;
+    height: 57px;
+    color: #ffffff;
+    font-size: 26px;
+    line-height: 57px;
+    text-align: center;
+    margin-top: 15px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: none;
+}
+.pay11:hover{
+    color:#ff4e43;
+    background: #fff;
+    border:1px solid #ff4e43
+}
+
+.game_center_m .list-info.question {
+    padding-top: 16px;
+    margin: 0 12px 0 16px;
+}
+
+.game_center_m .list-info.question ul{
+    margin-bottom: 0!important;
+}
+
+.game_center_m .question .num {
+    width: 31px;
+}
+
+.game_center_m .question .num span {
+    width: 11px;
+}
+
+.game_center_m .question .order-id {
+    width: 198px;
+}
+
+.game_center_m .question .order-id span {
+    width: 198px;
+}
+
+.game_center_m .question .ques-type {
+    width: 134px;
+}
+
+.game_center_m .question .ques-type span {
+    width: 114px;
+}
+
+.game_center_m .question .game-type {
+    width: 134px;
+}
+
+.game_center_m .question .game-type span {
+    width: 114px;
+}
+
+.game_center_m .question .server {
+    width: 112px;
+}
+
+.game_center_m .question .server span {
+    width: 92px;
+}
+
+.game_center_m .question .character {
+    width: 74px;
+}
+
+.game_center_m .question .character span {
+    width: 56px;
+}
+
+.game_center_m .question .product {
+    width: 152px;
+}
+
+.game_center_m .question .product span {
+    width: 132px;
+}
+
+.game_center_m .question .type {
+    width: 73px;
+}
+
+.game_center_m .question .type span {
+    width: 56px;
+}
+
+.game_center_m .question .time {
+    width: 160px;
+}
+
+.game_center_m .question .ques-title {
+    display: table;
+    width: 99.5%;
+    text-align: center;
+    border: 1px solid #b3b3b3;
+}
+
+.game_center_m .question .ques-title li {
+    display: table-cell;
+    height: 36px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.game_center_m .question .ques-content {
+    display: table;
+    width: 99.5%;
+    text-align: center;
+    border: 1px solid #b3b3b3;
+    border-top: none;
+}
+
+.game_center_m .question .ques-content li {
+    display: table-cell;
+    height: 54px;
+    vertical-align: middle;
+}
+
+.game_center_m .question .ques-content:nth-child(2n) {
+    background: #f6f7fb;
+}
+
+.game_center_m .question .ques-content span {
+    display: block;
+    overflow: hidden;
+    padding: 0 0px;
+    margin: 0 auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/* question css end */
+
+.game_center_m .warpper .morefun-info {
+    float: right;
+    width: 320px;
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+    background: #fff;
+    border-left: 1px solid #b3b3b3;
+}
+
+.game_center_m .warpper .morefun-info .morefun-logo img {
+    width: 60px;
+    height: 60px;
+    margin: 50px auto 8px auto;
+}
+
+.game_center_m .warpper .morefun-info .name {
+    padding-bottom: 20px;
+    margin: 0 40px;
+    text-align: center;
+    color: #6f6f6f;
+    font-size: 20px;
+    border-bottom: 1px solid #b3b3b3;
+}
+
+.game_center_m .warpper .morefun-info .game-descr {
+    padding: 0 26px;
+    margin: 14px 0;
+    line-height: 1.5;
+}
+
+.game_center_m .warpper .morefun-info h3 {
+    font-weight: normal;
+}
+
+.game_center_m .warpper .morefun-info .game {
+    font-size: 12px;
+    color: #6f6f6f;
+}
+.total-amount{
+    text-align: left;
+    padding-top: .1rem;
+}
+.content img{
+    margin: 0 !important
+}

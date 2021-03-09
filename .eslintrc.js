@@ -14,23 +14,18 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:nuxt/recommended',
   ],
-  plugins: ['prettier'],
-  // add your custom rules here
+  plugins: ['prettier', 'vue'],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    // indent 4 spaces
     indent: [
       'error',
       4,
       {
-        SwitchCase: 1
-      }
+        SwitchCase: 1,
+      },
     ],
-  ],
-  // allow paren-less arrow functions
+  },
   'arrow-parens': 0,
-  // allow async-await
   'generator-star-spacing': 0,
-},
 }

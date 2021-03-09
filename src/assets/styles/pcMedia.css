@@ -1,0 +1,23 @@
+@media only screen and (min-width:1280px) and (max-width:1366px) {
+    #app{
+        min-width: 1290px;
+    }
+}
+
+@media only screen and (min-width:1367px) and (max-width:1600px) {
+    #app{
+        min-width: 1366px;
+    }
+}
+
+@media only screen and (min-width:1601px) and (max-width:1680px) {
+    #app{
+        min-width: 1600px;
+    }
+}
+
+@media only screen and (min-width:1681px) and (max-width:1920px) {
+    #app{
+        min-width: 1680px;
+    }
+}

@@ -1,6 +1,6 @@
-var webpack = require('webpack');
+var webpack = require('webpack')
 export default {
-  srcDir:'src/',
+  srcDir: 'src/', //项目的启动配置路径
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'my-nuxt-project',
@@ -43,14 +43,12 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    '@nuxtjs/router'
-  ],
+  modules: ['@nuxtjs/router'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     postcss: {
-      autoprefixer:{}
-    }
+      autoprefixer: {},
+    },
   },
 }

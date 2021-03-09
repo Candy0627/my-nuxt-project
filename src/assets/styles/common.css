@@ -1,0 +1,619 @@
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+body {
+    font-family: Arial, "微软雅黑", "Microsoft YaHei";
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+fieldset,
+img {
+    border: none;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+select,
+input,
+textarea {
+    font-size: 16px;
+    margin: 0;
+    color: #5d5d5d;
+    padding-left: 10px;
+}
+
+select,
+input {
+    border-radius: 2px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+input {
+    outline-style: none;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+textarea {
+    resize: none;
+}
+
+a:hover {
+    color: #fcc916
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table tr:nth-child(1){
+    font-size: 22px;
+}
+table tr{
+    border: 2px solid #c5c5c5;
+}
+
+table tr:nth-child(2n){
+    background: #f2f2f2;
+}
+
+table tr:hover,
+.el-checkbox:hover {
+    background: #f2f2f2;
+    transition: background .2s 0s ease-in-out;
+}
+
+table tr td {
+    padding: 15px 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+/* a:hover{color:#ff6d19} */
+
+.clear {
+    clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.dn {
+    display: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* 显示隐藏 */
+.inner {
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.hide {
+    display: none;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+/* 单行文字超出省略 */
+.ep-one {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 多行文字超出省略 */
+.ep-two {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.ep-three {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+
+/* 滚动槽 */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background: rgba(0,0,0,0.06);
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.08);
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: rgba(0,0,0,0.12);
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+
+select {
+
+    /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+    border: solid 1px #fff;
+
+    /* 很关键：将默认的select选择框样式清除 */
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    /*在选择框的最右侧中间显示小箭头图片*/
+    /* background: url("../images/arrow.png") no-repeat scroll right center; */
+
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    padding-right: 14px;
+}
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand {
+    display: none;
+}
+
+/* 最外层遮罩层 */
+.mask {
+    background: rgba(0, 0, 0, 0.65);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 119;
+    text-align: center;
+    cursor: pointer;
+}
+
+.comWidth {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* self */
+.border_line {
+    border: 1px solid #c6c6c6;
+    border-radius: 2px;
+}
+
+.hidden {
+    display: none;
+}
+
+.a_bt {
+    padding: 1px 5px;
+    text-align: center;
+    color: #ff6d19;
+    font-size: 14px;
+    border: 1px solid #ff6d19;
+    border-radius: 2px;
+}
+
+.a_bt:hover {
+    color: #fff;
+    background: #ff6d19;
+    /* transition: color .8s 0s ease-in-out; */
+}
+
+/* 伪类动画 */
+/* &:hover{
+    transform: scale(0.2);
+    transition: all 1s linear;
+} */
+
+/* 圆角矩形 */
+.game_btn_more {
+    display: inline-block;
+    width: 239px;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    color: #f5713e;
+    font-size: 27.12px;
+    border: 3px solid #f5713e;
+    border-radius: 20px;
+    margin-top: 40px;
+    position: absolute;
+    bottom: -98px;
+    left: 50%;
+    margin-left: -119.5px;
+}
+
+.game_btn_more:hover {
+    transition: color 0.8s 0s ease-out;
+    color: #fff;
+    background: #f5713e;
+}
+
+.btn:hover {
+    /* transition: color 0.8s 0s ease-out; */
+    color: #fff !important;
+    background: #ff7a07;
+}
+
+.marb {
+    margin-bottom: 130px !important;
+}
+
+/* .hot_con .content:hover {
+    -webkit-box-shadow: 0 5px 10px 0 rgba(32, 32, 32, .7);
+    -ms-box-shadow: 0 5px 10px 0 rgba(32, 32, 32, .7);
+    -o-box-shadow: 0 0 26px 0 rgba(50, 50, 50, .2);
+    box-shadow: 0 0 26px 0 rgba(50, 50, 50, .2);
+    border-radius: 3px;
+}
+
+.hot_con .content:hover .btn {
+    color: #fff !important;
+    background: #ff7a07;
+} */
+
+/* 字白背景黃色 */
+.btn_hover:hover {
+    /* transition: color 0.8s 0s ease-out; */
+    color: #fff !important;
+    background: #ff7a07 !important;
+}
+
+
+.btn_sign:hover {
+    /* transition: color 0.8s 0s ease-out; */
+    color: #fff !important;
+    background: #ff7a07 !important;
+    border: 1px solid #ff7a07 !important
+}
+
+.el-select .el-input.is-focus .el-input__inner{
+    border-color: #fcc916;
+}
+
+.el-select-dropdown__item.selected{
+    color: #fcc916;
+}
+.el-radio__inner{
+    border: 1px solid #b3b3b3
+}
+/* 字黃邊框黃色 */
+.btn_font:hover {
+    color: #fcc916 !important;
+    background: #fff !important;
+    border: 1px solid #fcc916 !important;
+}
+
+.el-button--primary {
+    background-color: #fcc916;
+    border-color: #fcc916;
+}
+
+.el-message-box__status.el-icon-warning{
+    color: #fcc916;
+}
+.el-button--primary:focus,
+.el-button--primary:hover {
+    background-color: #fcc916;
+    border-color: #fcc916;
+}
+
+.el-radio__input {
+    margin-right: 10px;
+}
+
+.box_shadow {
+    -webkit-box-shadow: 0 0 6px 0 rgba(50, 50, 50, .2);
+    -ms-box-shadow: 0 0 6px 0 rgba(50, 50, 50, .2);
+    -o-box-shadow: 0 0 6px 0 rgba(50, 50, 50, .2);
+    box-shadow: 0 0 6px 0 rgba(50, 50, 50, .2);
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.img_index_shadow {
+    -webkit-box-shadow: 13px -10px 16px 0 rgba(0, 0, 0, .36);
+    -ms-box-shadow: 13px -10px 16px 0 rgba(0, 0, 0, .36);
+    -o-box-shadow: 13px -10px 16px 0 rgba(0, 0, 0, .36);
+    box-shadow: 13px -10px 16px 0 rgba(0, 0, 0, .36);
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.avatar_shadow {
+    -webkit-box-shadow: 0 5px 10px 0 rgba(32, 32, 32, .7);
+    -ms-box-shadow: 0 5px 10px 0 rgba(32, 32, 32, .7);
+    -o-box-shadow: 0 5px 10px 0 rgba(32, 32, 32, .7);
+    box-shadow: 0 5px 10px 0 rgba(32, 32, 32, .7);
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.bottom_shadow {
+    -webkit-box-shadow: 0 5px 10px 0 rgba(32, 32, 32, .7);
+    -ms-box-shadow: 0 5px 10px 0 rgba(32, 32, 32, .7);
+    -o-box-shadow: 0 5px 10px 0 rgba(32, 32, 32, .7);
+    box-shadow: 0 5px 10px 0 rgba(32, 32, 32, .7);
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.animated {
+    animation-timing-function: .5s;
+    animation-duration: .5s !important;
+    /* z-index:118 !important; */
+}
+
+.calendar_label {
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+.btn_search:hover {
+    width: 99px !important;
+    height: 38px !important;
+    transition: color 0.8s 0s ease-out;
+    border: 1px solid #ff7a07 !important;
+    box-sizing: border-box !important;
+    color: #ff7a07 !important;
+    background: #fff !important;
+}
+
+select,
+input {
+    outline: none;
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+/* 鼠标经过放大动画 */
+.conScale img {
+    transition: all .9s;
+}
+
+.conScale:hover img {
+    transform: scale(1.1, 1.1);
+}
+
+.conScaleX img {
+    transition: all .9s;
+}
+
+.conScaleX:hover img {
+    transform: scaleX(0);
+}
+
+.close:hover {
+    transition: background .8s 0s ease-out;
+    background: rgba(0, 0, 0, .75);
+    transform: scale(1.05, 1.05);
+}
+
+.close:hover i {
+    transform: rotate(90deg);
+}
+
+.close i {
+    transition: all .3s
+}
+
+.wrapper_pc {
+    width: 100%;
+    background: #fff !important;
+}
+
+/* 分页样式修改 */
+.el-dialog,
+.el-pager li {
+    background: none;
+}
+
+.el-pagination .btn-next,
+.el-pagination .btn-prev {
+    background: center center no-repeat !important;
+}
+
+.el-pager li {
+    font-size: 21px;
+}
+
+.el-pager li:hover,
+.el-pager li.active {
+    color: #fcc916;
+}
+
+.el-pagination {
+    font-weight: 500;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: #fcc916;
+}
+
+.el-checkbox__input.is-checked+.el-checkbox__label {
+    color: #fcc916;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    border-color: #ff7a07;
+}
+
+.el-checkbox__input.is-focus .el-checkbox__inner {
+    border-color: #ff7a07;
+}
+
+.el-form-item__label {
+    padding: 0 27px 0 0;
+    font-size: 16px;
+}
+
+/* 单选样式 */
+.el-radio__input,
+.el-radio__inner {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.el-radio__label {
+    padding-left: 0;
+}
+
+/* animate.css 元素动画应用 */
+.accountSave ul li:hover .left em,
+.wrapper .integral .integral_task ul li:hover em,
+.slidebar .nav ul li:hover::before {
+    animation: swing .5s ease-in;
+}
+
+/* 左右滑動動畫 */
+@keyframes leftfin {
+    0% {
+        right: 0;
+    }
+
+    50% {
+        right: -20px;
+    }
+
+    100% {
+        right: 0px;
+    }
+}
+
+
+/* 上下滑動動畫 */
+@keyframes topfin {
+    0% {
+        top: 50%;
+    }
+
+    50% {
+        top: 30%;
+    }
+
+    50% {
+        top: 40%;
+    }
+
+    100% {
+        top: 50%;
+    }
+}
+
+/* 從下面過渡進入 */
+@keyframes bottom_out {
+    0% {
+        transform: translateY(80px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* 從右邊過渡進入 */
+@keyframes right_out {
+    0% {
+        transform: translatex(80px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translatex(0);
+        opacity: 1;
+    }
+}
